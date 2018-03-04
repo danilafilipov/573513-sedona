@@ -7,7 +7,7 @@
   <body>
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-logo" href="index.html">
+			<a class="main-logo">
 				<img src="images/index-logo.html" width="138" height="70" alt="Logo">	
 			</a>
 			<ul class="main-menu">
@@ -22,6 +22,12 @@
 		<main class="container">
 			<h1 class="visually-hidden">Sedona</h1>
 
+			<div class="promo">
+				<img src="images/Canyon.jpeg" alt="Sedona">
+				<img src="images/Welcome.svg" alt="Welcome">
+				<img src="images/Because.svg" alt="Because the Grand canyon sucks!">				
+			</div>
+
 			<section class="cause">
 				<b>Седона - небольшой городок в аризоне, заслуживающий большего!</b>
 				<p>Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
@@ -29,26 +35,23 @@
 
 				<div class="first-cause">
 					<img src="images/first.png" width="800" height="256" alt="Настоящий городок">
-						<p class="cause-item">
-							<b>настоящий городок</b>
-							<span>-№1-</span> 
-							<span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
-						</p>
+					<p class="cause-item">
+						<b>настоящий городок</b>
+						<span>-№1-</span> 
+						<span>Седона - не аттракцион для туристов, там течет своя жизнь</span>
+					</p>
 				</div>
 
 				<ul class="recommendations">
 					<li class="recommendations-item">
-						<img src="images/home.png" width="75" height="72" alt="Жилье">
 						<h3>Жилье</h3>
 						<p>рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 					</li>
 					<li class="recommendations-item">
-						<img src="images/food.png" width="74" height="70" alt="Еда">
 						<h3>Еда</h3>
 						<p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 					</li>
 					<li class="recommendations-item">
-						<img src="images/souvenirs.png" width="64" height="76" alt="Сувениры">
 						<h3>Сувениры</h3>
 						<p>не только китайского, но и местного производства!</p>
 					</li>
@@ -86,7 +89,15 @@
 				<h2>Лучшие предложения</h2>
 				<b>Заинтересовались?</b>
 				<p class="sentence-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-				<!-- Здесь будет форма -->
+				<button class="search">Поиск гостиницы в седоне</button>	
+				<section class="search-hotels">
+					<h2>Подберем отель</h2>
+					<p>Дата заезда</p>
+					<p>Дата выезда</p>
+					<p>Взрослые</p>
+					<p>Дети</p>	
+					<button>Найти</button>
+				</section>			
 				<!-- Здесь будет карта -->
 			</section>
 		</main>
@@ -107,14 +118,5 @@
 					</a>
 				</p>
 		</footer>
-
-		<section class="search-hotels">
-			<h2>Подберем отель</h2>
-			<p>Дата заезда</p>
-			<p>Дата выезда</p>
-			<p>Взрослые</p>
-			<p>Дети</p>	
-			<button>Найти</button>
-		</section>
   </body>
 </html>
