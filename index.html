@@ -24,7 +24,7 @@
 
 				<section class="promo">
 					<h1 class="visually-hidden">Sedona</h1>
-					<img class="promo-images" src="img/Promo.png" width="458" height="352" alt="">
+					<img class="promo-images" src="img/Promo.png" width="458" height="352" alt="Добро пожаловать в Sedona">
 				</section>
 
 				<section class="block-cause">
@@ -88,19 +88,35 @@
 				</section>
 
 				<section class="offer">
-					<h2 class="visually-hidden">Лучшие предложения</h2>
 					<b class="interest">Заинтересовались?</b>
 					<p class="offer-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-					<button class="button search-button">Поиск гостиницы в седоне</button>
-
+			
 					<section class="search-hotels">
 						<h2 class="visually-hidden">Подбор отеля</h2>
+						<button class="button search-button">Поиск гостиницы в седоне</button>
+						
 						<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-							<p>Дата заезда</p>
-							<p>Дата выезда</p>
-							<p>Взрослые</p>
-							<p>Дети</p>	
-							<button>Найти</button>
+							<p class="appointment-item">
+								<label for="appointment-arrival-date">Дата заезда</label>
+								<input id="appointment-arrival-date" type="text" name="arrival-date" value="" placeholder="24 апреля 2017">
+							</p>
+							<p>
+								<label for="appointment-date-departure">Дата выезда</label>
+								<input id="appointment-date-departure" type="text" name="date-departure" value="" placeholder="4 июля 2017">
+							</p>
+							<p>
+								<label for="appointment-adults">Взрослые</label>
+								<button>-</button>
+								<input id="appointment-adults" type="text" value="" placeholder="2">
+								<button>+</button>
+							</p>
+							<p>
+								<label for="appointment-children">Дети</label>
+								<button>-</button>
+								<input id="appointment-children" type="text" value="" placeholder="0">
+								<button>+</button>
+							</p>	
+							<a href="inner.html">Найти</a>
 						</form>
 					</section>			
 					<img src="img/map.jpg" width="1200" height="593" alt="Карта штата">
