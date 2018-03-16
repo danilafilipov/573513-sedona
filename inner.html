@@ -9,20 +9,24 @@
 	</head>
 	<body class="inner-page">
 		<header class="main-header">
-			<nav class="main-navigation">
-				<a class="main-logo" href="index.html">
-					<img src="img/logo.png" width="138" height="70" alt="Логотип">	
-				</a>
-				<ul class="main-menu">
-					<li><a href="info.html">Информация</a></li>
-					<li><a href="foto-and-video.html">Фото и Видео</a></li>
-					<li><a href="map.html">Карта штата</a></li>
-					<li class="breadcrumbs-current">Гостиницы</li>
-				</ul>
-			</nav>
+			<div class="wrapper">
+				<nav class="main-navigation">
+					<ul class="main-menu">
+						<li class="menu-info"><a href="info.html">Информация</a></li>
+						<li class="menu-foto"><a href="foto-and-video.html">Фото и Видео</a></li>
+						<li class="menu-logo">
+							<a href="index.html" class="main-logo">
+								<img src="img/logo.png" width="138" height="70" alt="Логотип">	
+							</a>							
+						</li>
+						<li class="menu-map"><a href="map.html">Карта штата</a></li>
+						<li class="menu-hotel"><a>Гостиницы</a></li>
+					</ul>
+				</nav>
+			</div>
 		</header>
 
-		<main class="container">
+		<main>
 			<section>
 				<h2 class="visually-hidden">Форма для заполнения</h2>
 				<form class="user" method="post" action="https://echo.htmlacademy.ru">
