@@ -48,7 +48,6 @@ a {
 
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 	list-style: none;
 }
 
@@ -67,8 +66,22 @@ a {
 }
 
 .menu-info {
+	width: 240px;
 }
 
+.menu-foto {
+	width: 288px;
+}
+
+.menu-map {
+	width: 283px;
+	text-align: right;
+}
+
+.menu-hotel {
+	width: 244px;
+	text-align: right;
+}
 .wrapper-one,
 .wrapper-two {
 	text-align: center;
