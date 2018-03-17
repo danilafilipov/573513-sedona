@@ -15,56 +15,41 @@ a {
 	text-decoration: none;
 }
 
-.wrapper {
+.container {
 	max-width: 1200px;
 	min-width: 768px;
-	margin: auto;
+	margin: 0 auto;
 }
 
-.main-logo {
-	position: absolute;
-	top: 0;
-}
-
-.main-navigation {
+.main-header {
 	position: relative;
-	min-height: 57px;
-	padding: 0px 72px;
+
 	background-color: #ffffff;
 }
 
+.main-navigation {
+	position: inherit;
+	max-width: 1055px;
+	margin: 0 auto;
+}
+
+.logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+}
+
 .main-menu {
-	margin: 0px;
-	padding: 0px;
-	min-height: 57px;
+	margin: 0;
+	padding: 0;
+	min-height: 55px;
 
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
 	list-style: none;
-}
-
-.menu-info {
-	width: 240px;
-}
-
-
-.menu-foto {
-	width: 220px;
-}
-
-.menu-logo {
-	width: 138px;
-}
-
-.menu-map {
-	width: 220px;
-	text-align: right;
-}
-
-.menu-hotel {
-	width: 245px;
-	text-align: right;
 }
 
 .main-menu a {
@@ -79,6 +64,9 @@ a {
 
 .main-menu a:active {
 	color: rgba(0, 0, 0, 0.3);
+}
+
+.menu-info {
 }
 
 .wrapper-one,
