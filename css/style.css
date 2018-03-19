@@ -19,6 +19,8 @@ a {
 	max-width: 1200px;
 	min-width: 768px;
 	margin: 0 auto;
+
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3)
 }
 
 .visually-hidden {
@@ -31,14 +33,19 @@ a {
 
 .main-header {
 	position: relative;
+	min-height: 56px;
 
 	background-color: #ffffff;
 }
 
 .main-navigation {
 	position: inherit;
-	max-width: 1055px;
+	max-width: 100%;
 	margin: 0 auto;
+}
+
+.main-logo {
+
 }
 
 .logo {
@@ -52,11 +59,10 @@ a {
 
 .main-menu {
 	margin: 0;
-	padding: 0;
-	min-height: 55px;
+	padding: 0 6%;
 
 	display: flex;
-	align-items: center;
+	flex-wrap: wrap;
 	list-style: none;
 }
 
@@ -74,30 +80,40 @@ a {
 	color: rgba(0, 0, 0, 0.3);
 }
 
+.main-menu li {
+	padding: 14px 0 16px 0;
+}
+
 .menu-info {
-	width: 240px;
+	width: 20%;
+	margin-right: 3%;
 }
 
 .menu-foto {
-	width: 288px;
+	width: 20%;
+	margin-right: 7%;
 }
 
 .menu-map {
-	width: 283px;
+	width: 20%;
+	margin-left: 7%;
 	text-align: right;
 }
 
 .menu-hotel {
-	width: 244px;
+	width: 20%;
+	margin-left: 3%;
 	text-align: right;
 }
 
 .promo {
+	display: block;
 	position: relative;
-	min-height: 510px;
+	min-height: 508px;
 	text-align: center;
-
 	background: url("../img/background-photo.jpg") no-repeat 10% 21%;
+	z-index: 2;
+	background-color: #6e8595;
 }
 
 .promo::after {
@@ -106,30 +122,44 @@ a {
 	display: block;
 	min-height: 57px;
 	width: 100%;
-	
-	background-image: url("../img/background-shape.svg");
+	z-index: 1;
+
+
+	background-image: url("../img/shape.png");
 	background-position: bottom;
 	background-size: contain;
-	background-repeat: no-repeat;
 }
 
 .promo-images {
-	margin-top: 75px;
+	margin-top: 76px;
+	margin-bottom: 15px;
 }
 
 .wrapper-one,
 .wrapper-two {
 	text-align: center;
-
 	background-color: #ffffff;
 }
 
+.wrapper-one {
+	min-height: 216px
+}
+
+.wrapper-one p {
+	margin: 0;
+}
+
 .cause-tagline {
-	font-size: 21px;
-	font-weight: bold;
+	display: block;
+    padding-top: 60px;
+    width: 440px;
+    margin: auto;
+    font-size: 21px;
+    font-weight: bold;
 }
 
 .cause-text {
+	padding-top: 27px;
 	color: #333333;
 }
 
@@ -137,6 +167,19 @@ a {
 .block-second-cause {
 	background-color: #81b3d2;
 	color: #ffffff;
+}
+
+.block-first-cause {
+	width: 400px;
+    height: 256px;
+}
+
+.first-cause {
+	margin: 0;
+}
+
+.first-cause::before {
+
 }
 
 .cause-name,
