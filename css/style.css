@@ -198,7 +198,7 @@ a {
 	content: "";
 	position: relative;
     display: block;
-    width: 66.67%;
+    width: 66.7%;
     min-height: 256px;
     background-size: cover;
     background-position: 50% 54%;
@@ -209,7 +209,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 33.4%;;
+	width: 33.3%;;
 	margin: 0;
 	background-color: #81b3d2;
 
@@ -236,18 +236,23 @@ a {
 	line-height: 21px;
 }
 
-.cause-number,
-.cause-desc,
 .recommend-desc {
 	line-height: 21px;
 	color: #333333;
+}
+
+.cause-number,
+.cause-desc, {
+	line-height: 21px;
+	color: #ffffff;
+
 }
 
 .block-second-cause::before {
 	content: "";
 	position: relative;
     display: block;
-    width: 66.67%;
+    width: 66.7%;
     min-height: 256px;
     background-size: cover;
     background-position: 50% 54%;
@@ -258,7 +263,21 @@ a {
 
 .other-name {
 	font-size: 21px;
-	line-height: 21px;
+    line-height: 21px;
+    width: 130px;
+
+    margin: 0 auto 21px;
+}
+.other-number {
+    display: block;
+    width: 70px;
+    margin: 0 auto 19px;
+}
+
+.other-desc {
+	width: 70%;
+    margin: 0 auto;
+    line-height: 21px;
 }
 
 .block-other-cause li,
@@ -289,10 +308,6 @@ a {
 .recommend-desc {
 	width: 75%;
     margin: 0 auto;
-}
-
-.food .recommend-desc {
-
 }
 
 .recommend li {
@@ -339,21 +354,33 @@ a {
 	background-repeat: no-repeat;
 }
 
+.block-third-cause {
+	display: flex;
+	flex-wrap: wrap;
+}
 
-
-
+.block-third-cause div {
+    text-align: center;
+    padding-top: 47px;
+    min-height: 209px;
+    width: 33.3%;
+}
 
 .interest {
 	font-size: 30px;
 	line-height: 36px;
 }
 .offer {
+	padding-top: 50px;
+    text-align: center;
 	background-color: #ffffff;
 }
 
 .offer-info {
+	width: 500px;
 	line-height: 24px;
 	color: #333333;
+	margin: 23px auto 0;
 }
 
 .search-hotels{
@@ -361,17 +388,19 @@ a {
 }
 
 .search-button {
-	width: 570px;
-	height: 85px;
-
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #ffffff;
-	text-transform: uppercase;
-
-	background-color: #766357;
-	border: none;
+    display: block;
+    width: 568px;
+    height: 86px;
+    margin: 47px auto 0;
+    padding: 0;
+    background-color: #766357;
+    border: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-family: "PT Sans", Arial, sans-serif;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .search-button:focus,
@@ -385,8 +414,21 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+
+/* Форма */
+
+.map {
+}
+
+.map-item {
+	position: relative;
+}
+
 .appointment-form {
+	width: 570px;
+	height: 395px;
 	font-weight: bold;
+	margin: 0 auto;
 }
 
 .appointment-item input{
@@ -452,13 +494,35 @@ a {
 	background-color: #ffffff;
 }
 
+.wrapper-footer {
+	display: flex;
+}
+
 .footer-visit {
+	display: block;
+	
 	font-size: 21px;
 	color: #000000;
 }
 
 .footer-social {
+	display: flex;
 	list-style: none;
+}
+
+.footer-social li {
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+	width: 46px;
+	height: 48px;
+	background-color: #81b3d2;
+	margin-right: 5px;
+	text-align: center;
+}
+
+.footer-social li:nth-child(3) {
+	margin-right: 0;
 }
 
 .social-button {
