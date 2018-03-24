@@ -371,6 +371,7 @@ a {
 	line-height: 36px;
 }
 .offer {
+	position: relative;
 	padding-top: 50px;
     text-align: center;
 	background-color: #ffffff;
@@ -420,16 +421,189 @@ a {
 .map {
 }
 
-.map-item {
+.appointment-form {
+	position: absolute;
+    top: 291px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+	padding: 55px 54px 55px 56px;
+    z-index: 3;
+
+    width: 458px;
+    height: 285px;
+    font-weight: bold;
+    background-color: #ffffff;
+}
+
+.arrival {
+	margin-top: 0;
+	margin-bottom: 29px;
+}
+
+.arrival label {
+	padding-top: 6px;
+}
+
+.arrival input {
+	width: 295px;
+	min-height: 36px;
+    margin-left: 23px;
+    padding-left: 11px;
+    padding-right: 40px;
+}
+
+.departure {
+	margin-top: 0;
+	margin-bottom: 15px;
+}
+
+.departure label {
+	padding-top: 6px;
+}
+
+.departure input {
+	width: 295px;
+	min-height: 36px;
+    margin-left: 20px;
+    padding-left: 11px;
+    padding-right: 40px;
+}
+
+.button-menus {
 	position: relative;
 }
 
-.appointment-form {
-	width: 570px;
-	height: 395px;
-	font-weight: bold;
-	margin: 0 auto;
+.button-menus:focus::after,
+.button-menus:hover::after {
+	background-color: #000000;
 }
+
+.button-menus:active::after {
+	background-color: #81b3d2;
+}
+
+.button-plus:focus::after,
+.button-plus:focus::before,
+.button-plus:hover::after,
+.button-plus:hover::before {
+	background-color: #000000;
+}
+
+.button-plus:active:after,
+.button-plus:active:before {
+	background-color: #81b3d2;
+}
+
+.button-menus::after {
+	content: "";
+    position: absolute;
+    height: 3px;
+    width: 10px;
+    top: 19px;
+    right: 11px;
+
+    background-color: #a9a9a9;
+}
+
+.button-plus {
+	position: relative;
+}
+
+.button-plus::after {
+	content: "";
+    position: absolute;
+    height: 11px;
+    width: 3px;
+    top: 15px;
+    right: 18px;
+
+    background-color: #a9a9a9;
+}
+
+.button-plus::before {
+	content: "";
+    position: absolute;
+    height: 3px;
+    width: 11px;
+    top: 19px;
+    right: 14px;
+
+    background-color: #a9a9a9;
+}
+
+.adults {
+	margin-right: 53px;
+}
+
+.adults label {
+	margin-top: 7px;
+	margin-right: 40px;
+}
+
+.adults button {
+	height: 39px;
+	width: 35px;
+}
+
+.adults input {
+	width: 44px;
+    height: 37px;
+    text-align: center;
+}
+
+
+.children {
+	display: flex;
+}
+
+.children label {
+	margin-top: 7px;
+	margin-right: 28px
+}
+
+.children button {
+	height: 39px;
+	width: 35px;
+}
+
+.children input {
+	width: 44px;
+    height: 37px;
+    text-align: center;
+}
+
+.arrival .button-calendar {
+	position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 60px;
+    top: 63px;
+    background-image: url(../img/calendar.svg);
+    background-repeat: no-repeat;
+}
+
+.departure .button-calendar {
+	position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 60px;
+    top: 130px;
+    background-image: url(../img/calendar.svg);
+    background-repeat: no-repeat;
+}
+
+.number-people {
+	display: flex;
+	margin-bottom: 57px;
+}
+
+.appointment-item {
+	display: flex;
+	text-align: left;
+}
+
+
 
 .appointment-item input{
 	font: inherit;
@@ -446,8 +620,7 @@ a {
 
 .appointment-item input:focus{
 	background-color: transparent;
-	border: 2px solid #e5e5e5;
-	outline: none;
+	outline: 2px solid #e5e5e5;
 }
 
 .appointment-item button {
@@ -490,24 +663,48 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+/* Карта */
+
+.visually-map {
+	min-height: 473px;
+	background-image: url("../img/map.jpg");
+	background-size: cover;
+
+}
+/* Подвал */
+
 .footer {
-	background-color: #ffffff;
+	display: flex;
+    background-color: #ffffff;
+    padding: 36px 0 31px 0;
 }
 
-.wrapper-footer {
-	display: flex;
+.footer p,
+.footer ul {
+	margin: 0;
+	padding: 0;
 }
 
 .footer-visit {
-	display: block;
-	
-	font-size: 21px;
+	width: 33.33%;
+	text-align: center;
+    font-size: 21px;
+    margin-top: 10px;
 	color: #000000;
 }
 
 .footer-social {
 	display: flex;
+	justify-content: center;
+	width: 33.33%;
 	list-style: none;
+}
+
+.footer-copyright {
+	display: flex;
+	justify-content: center;
+	width: 33.33%
+
 }
 
 .footer-social li {
@@ -533,6 +730,8 @@ a {
 .copyright-web {
 	font-weight: lighter;
 	color: #000000;
+	margin-top: 10px;
+    margin-right: 10px
 }
 
 .logo-htmlacademy:focus path,
