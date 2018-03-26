@@ -216,7 +216,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 33.3%;;
+	width: 33.33%;
 	margin: 0;
 	background-color: #81b3d2;
 
@@ -233,7 +233,9 @@ a {
 }
 .cause-desc {
 	display: block;
-	width: 75%;
+	width: 76%;
+	margin-top: 8px;
+	line-height: 21px;
     text-align: center;
 }
 
@@ -468,6 +470,7 @@ a {
 	left: 477px;
 	fill: #a9a9a9;
 	background-color: transparent;
+	cursor: pointer;
 }
 
 .arrival .button-calendar {
@@ -510,6 +513,12 @@ a {
 
 .button-menus {
 	position: relative;
+	cursor: pointer;
+}
+
+.button-plus {
+	position: relative;
+	cursor: pointer;
 }
 
 .button-menus:focus::after,
@@ -542,10 +551,6 @@ a {
     right: 11px;
 
     background-color: #a9a9a9;
-}
-
-.button-plus {
-	position: relative;
 }
 
 .button-plus::after {
@@ -686,7 +691,6 @@ a {
 	min-height: 473px;
 	background-image: url("../img/map.jpg");
 	background-size: cover;
-
 }
 /* Подвал */
 
@@ -746,6 +750,7 @@ a {
 	margin-right: 6px;
 	padding-top: 5px;
 	text-align: center;
+	cursor: pointer;
 }
 
 .footer-social li:nth-child(3) {
@@ -761,8 +766,8 @@ a {
 	font-weight: lighter;
     color: #000000;
     margin-top: 10px;
-    margin-right: 8px;
-    padding-left: 10px;
+    margin-right: 10px;
+    padding-left: 3px;
 }
 
 .logo-htmlacademy:focus path,
@@ -783,6 +788,13 @@ a {
 
 /* Страница каталога*/
 
+.main-menu .active-page,
+.main-menu .active-page:focus,
+.main-menu .active-page:hover {
+	color: #766357;
+}
+
+
 .user-form {
 	display: flex;
     background-image: url(../img/background-hotel.jpg);
@@ -792,7 +804,7 @@ a {
     padding-left: 72px;
     padding-right: 72px;
     padding-top: 27px;
-    padding-bottom: 14px;
+    padding-bottom: 15px;
 }
 
 legend {
@@ -812,11 +824,6 @@ fieldset {
 
 
 /* Форма */
-
-.form {
-
-}
-
 
 .infrastructure {
 	padding: 0;
@@ -846,10 +853,15 @@ fieldset {
     background-image: url(../img/checkbox-off.svg);
     background-position: 0 0;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .form-checkbox:checked + label::before {
 	background-image: url("../img/checkbox-on.svg");
+}
+
+.form-checkbox:disabled:active {
+	color: #6a6a6a;
 }
 
 .filter {
@@ -973,7 +985,7 @@ fieldset {
 }
 
 .range-toggle-max {
-	left: 80%;
+	left: 83%;
 }
 
 .range-toggle:hover {
@@ -1007,10 +1019,6 @@ fieldset {
 }
 
 
-
-
-
-
 .sorting-panel {
 	display: flex;
 	padding-left: 72px;
@@ -1019,42 +1027,48 @@ fieldset {
 }
 
 .regularity {
-    margin-top: 33px;
-    margin-left: 470px;
+    margin-top: 31px;
+    margin-left: 57px;
 }
 
 .quantity-found {
 	display: block;
-	margin-top: 31px;
-	margin-bottom: 30px;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
+    width: 130px;
+    margin-top: 31px;
+    margin-bottom: 30px;
+    margin-right: 34px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
 }
 
 .sorting-menu {
 	display: flex;
+    width: 800px;
     font-size: 12px;
     line-height: 18px;
     list-style: none;
     margin-top: 37px;
-    padding-left: 48px;
+
+   	padding: 0;
 }
 
-.sorting-menu li {
-	margin-right: 33px;
-}
-
-.sorting-menu li:nth-child(1) {
+.sorting {
 	margin-right: 40px;
 }
 
+.sorting-price {
+	margin-right: 32px;
+}
 
+.sorting-type {
+	margin-right: 35px;
+}
 
 .sorting-price a,
 .sorting-type a,
 .sorting-rating a {
-	border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 	color: rgba(0, 0, 0, 0.3);
 }
 
@@ -1064,14 +1078,12 @@ fieldset {
 .sorting-price a:hover,
 .sorting-type a:hover,
 .sorting-rating a:hover {
-	border-bottom: 1px dashed #81b3d2;
+	border: none;
+	/*border-bottom: 1px dotted #81b3d2;*/
 	color: #81b3d2;
 }
 
-.sorting-price a:active {
-	border: none;
-}
-
+.sorting-price a:active,
 .sorting-type a:active,
 .sorting-rating a:active {
 	border: none;
@@ -1084,6 +1096,20 @@ fieldset {
 	margin-right: 8px;
 }
 
+.regularity-icon path {
+	fill: #cacaca;
+}
+
+.regularity-icon:focus path,
+.regularity-icon:hover path {
+	fill: #231f20;
+}
+
+.regularity-icon:active path {
+	fill: #81b3d2;
+}
+
+
 .hotel {
 	padding: 0;
 	margin: 0;
@@ -1092,13 +1118,49 @@ fieldset {
 }
 
 .hotel li {
-	border-top:2px solid #cacaca;
+	padding-top: 25px;
+    padding-left: 72px;
+    padding-bottom: 17px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.hotel li:last-child {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-foto {
+	margin-top: 4px;
+}
+
+.hotel-item {
+	display: flex;
+}
+
+.hotel-description {
+	width: 750px;
+	margin-left: 30px;
 }
 
 .hotel-name {
+	width: 225px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
+	margin: 0;
+	cursor: pointer;
+}
+
+.wrapper-description {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 225px;
+    padding-top: 3px;
+}
+
+.wrapper-description-one {
+	width: 170px;
+    margin-right: 6px;
 }
 
 .hotel-name:focus,
@@ -1111,11 +1173,16 @@ fieldset {
 }
 
 .hotel-info {
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: bold;
-	color: #ffffff;
-	background-color: #81b3d2;
+	display: block;
+    width: 110px;
+    height: 27px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #81b3d2;
 }
 
 .hotel-info:focus,
@@ -1130,11 +1197,16 @@ fieldset {
 
 
 .booking {
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: bold;
-	color: #ffffff;
-	background-color: #766357;
+	display: block;
+    width: 142px;
+    height: 27px;
+    padding-top: 3px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #766357;
 }
 
 .booking:focus,
@@ -1147,3 +1219,42 @@ fieldset {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.hotel-type,
+.hotel-price {
+	display: block;
+	margin-bottom: 12px;
+}
+
+.rating-description {
+	margin-left: 30px;
+}
+
+.stars-rating {
+	height: 20px;
+    margin-left: auto;
+    margin-top: 3px;
+    margin-bottom: 44px;
+    text-align: right;
+    background-image: url(../img/star.svg);
+    background-repeat: space no-repeat;
+	background-image: url("../img/star.svg");
+}
+
+.four-stars {
+	width: 89px;
+}
+
+.popular-rating {
+	width: 110px;
+	height: 27px;
+	text-align: center;
+	background-color: #f2f2f2;
+}
+
+.three-stars {
+	width: 64px;
+}
+
+.two-stars {
+	width: 40px;
+}
