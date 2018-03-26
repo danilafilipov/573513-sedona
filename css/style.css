@@ -961,7 +961,8 @@ fieldset {
 	position: absolute;
     width: 20px;
     height: 20px;
-    top:-9px;
+    top: 1px;
+	left: 10px;
     background-color: #ababab;
     border: 8px solid #fff;
     border-radius: 50%;
@@ -971,18 +972,16 @@ fieldset {
     margin-left: -10px;
 }
 
-.range-toggle-min {
-
-}
-
 .range-toggle-max {
-
+	left: 80%;
 }
 
 .range-toggle:hover {
-	width: 21px;
-	height: 21px;
+	width: 22px;
+	height: 22px;
 	border: 9px solid #fff;
+	margin-top: -11px;
+    margin-left: -11px;
 }
 
 .btn-transparent {
