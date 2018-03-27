@@ -1,11 +1,11 @@
 *,::after,::before { 
--webkit-box-sizing: inherit; 
-box-sizing: inherit 
+	-webkit-box-sizing: inherit; 
+	box-sizing: inherit 
 } 
 
 html { 
--webkit-box-sizing: border-box; 
-box-sizing: border-box 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box 
 }
 
 body {
@@ -27,7 +27,6 @@ a {
 
 .container {
 	max-width: 1200px;
-	min-width: 768px;
 	margin: 0 auto;
 
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3)
@@ -50,7 +49,6 @@ a {
 
 .main-navigation {
 	position: inherit;
-	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -64,12 +62,12 @@ a {
 }
 
 .main-menu {
-	margin: 0;
-    padding: 0 5.9%;
-
 	display: flex;
 	flex-wrap: wrap;
 	list-style: none;
+	
+	margin: 0;
+    padding: 0 6%;
 }
 
 .main-menu a {
@@ -87,27 +85,24 @@ a {
 }
 
 .main-menu li {
-	padding: 14px 0 16px 0;
+	width: 20%;
+	padding: 15px 0;
 }
 
-.menu-info {
-	width: 20%;
-    margin-right: 2.8%;
+.main-menu li:first-child {
+    margin-right: 3%;
 }
 
-.menu-foto {
-	width: 20%;
+.main-menu li:nth-child(2) {
 	margin-right: 7%;
 }
 
-.menu-map {
-	width: 20%;
-    margin-left: 6.9%;
+.main-menu li:nth-child(3) {
+	margin-left: 7%;
 	text-align: right;
 }
 
-.menu-hotel {
-	width: 20%;
+.main-menu li:last-child {
 	margin-left: 3%;
 	text-align: right;
 }
@@ -411,6 +406,7 @@ a {
     font-family: "PT Sans", Arial, sans-serif;
     line-height: 26px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .search-button:focus,
@@ -427,16 +423,13 @@ a {
 
 /* Форма */
 
-.map {
-}
-
 .appointment-form {
 	position: absolute;
     top: 291px;
     left: 0;
     right: 0;
     margin: 0 auto;
-	padding: 55px 54px 55px 56px;
+	padding: 55px;
     z-index: 3;
 
     width: 568px;
@@ -462,6 +455,7 @@ a {
     width: 346px;
     height: 38px;
     padding-left: 12px;
+    padding-right: 35px;
 }
 
 .arrival .button-calendar,
@@ -506,9 +500,10 @@ a {
 }
 
 .departure input {
-	width: 346px;
+	width: 345px;
     height: 38px;
     padding-left: 12px;
+    padding-right: 35px;
 }
 
 .button-menus {
@@ -634,16 +629,36 @@ a {
 
 	background-color: #f2f2f2;
 	border: none;
+	outline: none;
 }
 
 .appointment-item input:hover{
 	background-color: #ebebeb;
-	outline: none;
 }
 
-.appointment-item input:focus{
+.arrival input:focus,
+.departure input:focus {
 	background-color: transparent;
 	border: 2px solid #e5e5e5;
+	padding-left: 10px;
+}
+
+.adults input:focus,
+.children input:focus {
+	background-color: transparent;
+	border: 2px solid #e5e5e5;
+}
+
+.appointment-item input::-webkit-input-placeholder {
+	color:#000;
+}
+
+.appointment-item input:-moz-placeholder { 
+	color:#000;
+}
+
+.appointment-item input:-ms-input-placeholder {
+	color:#000;
 }
 
 .appointment-item button {
@@ -696,8 +711,9 @@ a {
 
 .footer {
 	display: flex;
+	align-items: center;
     background-color: #ffffff;
-    padding: 36px 0 31px 0;
+    padding: 33px 0;
 }
 
 .footer p,
@@ -706,11 +722,13 @@ a {
 	padding: 0;
 }
 
-.footer-visit {
+.hashtag {
 	width: 33.33%;
 	text-align: center;
-    font-size: 21px;
-    margin-top: 10px;
+}
+
+.hashtag a {
+	font-size: 21px;
 	color: #000000;
 }
 
@@ -721,40 +739,44 @@ a {
 	list-style: none;
 }
 
-.footer-social li:focus,
-.footer-social li:hover {
-	background-color: #669ec0; 
+.footer-social a:focus,
+.footer-social a:hover {
+	background-color: #669ec0;
 }
 
-.footer-social li:active {
+.footer-social a:active {
 	background-color: #5496bd; 
 }
 
-.social-icon:active path {
+.social-button:active path {
 	fill: #88b6d1;
 }
+
 
 .footer-copyright {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	width: 33.33%
 }
 
 .footer-social li {
+	margin-right: 6px;
+}
+
+.footer-social li:nth-child(3) {
+	margin-right: 0;
+}
+
+.footer-social a {
 	display: flex;
   	align-items: center;
   	justify-content: center;
 	width: 46px;
 	height: 48px;
 	background-color: #81b3d2;
-	margin-right: 6px;
-	padding-top: 5px;
 	text-align: center;
 	cursor: pointer;
-}
-
-.footer-social li:nth-child(3) {
-	margin-right: 0;
 }
 
 .social-button {
@@ -765,9 +787,7 @@ a {
 .copyright-web {
 	font-weight: lighter;
     color: #000000;
-    margin-top: 10px;
     margin-right: 10px;
-    padding-left: 3px;
 }
 
 .logo-htmlacademy:focus path,
@@ -948,6 +968,7 @@ fieldset {
 
   background: none;
   border: none;
+  outline: none;
 }
 
 .range-controls {
@@ -1019,16 +1040,13 @@ fieldset {
 }
 
 
+/* Панель сортировки */
+
 .sorting-panel {
 	display: flex;
 	padding-left: 72px;
 	padding-right: 72px;
 	background-color: #ffffff;
-}
-
-.regularity {
-    margin-top: 31px;
-    margin-left: 57px;
 }
 
 .quantity-found {
@@ -1053,50 +1071,49 @@ fieldset {
    	padding: 0;
 }
 
-.sorting {
-	margin-right: 40px;
-}
-
-.sorting-price {
-	margin-right: 32px;
-}
-
-.sorting-type {
+.sorting-menu li {
 	margin-right: 35px;
 }
 
-.sorting-price a,
-.sorting-type a,
-.sorting-rating a {
+.sorting-menu a {
 	border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 	color: rgba(0, 0, 0, 0.3);
 }
 
-.sorting-price a:focus,
-.sorting-type a:focus,
-.sorting-rating a:focus,
-.sorting-price a:hover,
-.sorting-type a:hover,
-.sorting-rating a:hover {
+.sorting-menu a:focus,
+.sorting-menu a:hover {
 	border: none;
-	/*border-bottom: 1px dotted #81b3d2;*/
 	color: #81b3d2;
 }
 
-.sorting-price a:active,
-.sorting-type a:active,
-.sorting-rating a:active {
+.sorting-menu a:active {
 	border: none;
 	color: #000000;
 }
 
+.sorting-menu a:not([href]) {
+	color: #81b3d2;
+	border-bottom: none;
+	cursor: pointer;
+}
 
-/*Сортировка направление */
-.smal-to-big {
+
+/*Сортировка по возростанию, убыванию */
+
+.ascending {
 	margin-right: 8px;
 }
 
-.regularity-icon path {
+.regularity {
+    margin-top: 31px;
+    margin-left: 57px;
+}
+
+.active-descendingly path {
+	fill: #81b3d2;
+}
+
+.ascending path {
 	fill: #cacaca;
 }
 
@@ -1109,6 +1126,8 @@ fieldset {
 	fill: #81b3d2;
 }
 
+
+/* Каталог */
 
 .hotel {
 	padding: 0;
