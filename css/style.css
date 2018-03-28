@@ -57,6 +57,7 @@ a {
 	top: 0;
 	left: 0;
 	right: 0;
+
 	margin: 0 auto;
 	z-index: 3;
 }
@@ -64,8 +65,8 @@ a {
 .main-menu {
 	display: flex;
 	flex-wrap: wrap;
+
 	list-style: none;
-	
 	margin: 0;
     padding: 0 6%;
 }
@@ -155,9 +156,10 @@ a {
 
 .cause-tagline {
 	display: block;
+	width: 440px;
     padding-top: 60px;
-    width: 440px;
     margin: auto;
+
     font-size: 21px;
     font-weight: bold;
 }
@@ -170,6 +172,7 @@ a {
 .block-cause {
 	display: flex;
 	flex-direction: column;
+
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -177,8 +180,8 @@ a {
 
 .block-first-cause,
 .block-second-cause {
-	width: 100%;
 	display: flex;
+	width: 100%;
 	color: #ffffff;
 }
 
@@ -195,13 +198,13 @@ a {
 	margin-bottom: 47px
 }
 
-
 .block-first-cause::after {
 	content: "";
 	position: relative;
     display: block;
     width: 66.7%;
     min-height: 256px;
+
     background-size: cover;
     background-position: 50% 54%;
     background-image: url("../img/firstcause.jpg");
@@ -211,6 +214,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+
 	width: 33.33%;
 	margin: 0;
 	background-color: #81b3d2;
@@ -230,6 +234,7 @@ a {
 	display: block;
 	width: 76%;
 	margin-top: 8px;
+
 	line-height: 21px;
     text-align: center;
 }
@@ -249,7 +254,6 @@ a {
 .cause-desc, {
 	line-height: 21px;
 	color: #ffffff;
-
 }
 
 .block-second-cause::before {
@@ -258,12 +262,12 @@ a {
     display: block;
     width: 66.7%;
     min-height: 256px;
+
     background-size: cover;
     background-position: 50% 54%;
     background-repeat: no-repeat;
     background-image: url("../img/second-cause.jpg");
 }
-
 
 .other-name {
 	font-size: 21px;
@@ -374,6 +378,7 @@ a {
 	font-size: 30px;
 	line-height: 36px;
 }
+
 .offer {
 	position: relative;
 	padding-top: 50px;
@@ -383,9 +388,9 @@ a {
 
 .offer-info {
 	width: 500px;
+	margin: 23px auto 0;
 	line-height: 24px;
 	color: #333333;
-	margin: 23px auto 0;
 }
 
 .search-hotels{
@@ -398,14 +403,16 @@ a {
     height: 86px;
     margin: 47px auto 0;
     padding: 0;
+
     background-color: #766357;
     border: none;
     color: #ffffff;
-    text-transform: uppercase;
-    font-size: 21px;
+
     font-family: "PT Sans", Arial, sans-serif;
-    line-height: 26px;
+    font-size: 21px;
     font-weight: bold;
+    line-height: 26px;
+    text-transform: uppercase;
     cursor: pointer;
 }
 
@@ -420,7 +427,6 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-
 /* Форма */
 
 .appointment-form {
@@ -428,12 +434,13 @@ a {
     top: 291px;
     left: 0;
     right: 0;
+
+    width: 568px;
+    height: 395px;
     margin: 0 auto;
 	padding: 55px;
     z-index: 3;
 
-    width: 568px;
-    height: 395px;
     font-weight: bold;
     background-color: #ffffff;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
@@ -446,14 +453,16 @@ a {
 
 .arrival label {
 	width: 101px;
-    margin-right: 10px;
     height: 38px;
+
+    margin-right: 10px;
     padding-top: 6px;
 }
 
 .arrival input {
     width: 346px;
     height: 38px;
+    
     padding-left: 12px;
     padding-right: 35px;
 }
@@ -848,17 +857,19 @@ a {
 	color: #766357;
 }
 
-
 .user-form {
 	display: flex;
-    background-image: url(../img/background-hotel.jpg);
-    background-position: center;
-    background-color: #000000;
-    color: #ffffff;
-    padding-left: 72px;
+
+	padding-left: 72px;
     padding-right: 72px;
     padding-top: 27px;
     padding-bottom: 15px;
+    color: #ffffff;
+
+    background-image: url(../img/background-hotel.jpg);
+    background-size: cover;
+    background-position: center;
+    background-color: #000000;
 }
 
 legend {
