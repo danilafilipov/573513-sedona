@@ -624,6 +624,7 @@ a {
 }
 
 .appointment-item input{
+	height: 38px;
 	font: inherit;
 	text-transform: uppercase;
 
@@ -703,10 +704,11 @@ a {
 /* Карта */
 
 .visually-map {
-	min-height: 473px;
+	height: 473px;
 	background-image: url("../img/map.jpg");
 	background-size: cover;
-}
+	}
+
 /* Подвал */
 
 .footer {
@@ -738,6 +740,9 @@ a {
 	width: 33.33%;
 	list-style: none;
 }
+
+
+
 
 .footer-social a:focus,
 .footer-social a:hover {
@@ -1161,24 +1166,18 @@ fieldset {
 }
 
 .hotel-name {
-	width: 225px;
+	display: inline;
 	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	margin: 0;
 	cursor: pointer;
 }
 
 .wrapper-description {
 	display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 225px;
     padding-top: 3px;
 }
 
 .wrapper-description-one {
-	width: 170px;
     margin-right: 6px;
 }
 
@@ -1192,7 +1191,7 @@ fieldset {
 }
 
 .hotel-info {
-	display: block;
+	display: inline-block;
     width: 110px;
     height: 27px;
     padding-top: 3px;
