@@ -799,7 +799,7 @@ a {
 }
 
 .social-button:active::before {
-	opacity: 0.5;
+	opacity: 0.3;
 }
 
 .footer-copyright {
@@ -914,8 +914,12 @@ fieldset {
 	background-image: url("../img/checkbox-on.svg");
 }
 
-.form-checkbox:disabled:active {
-	color: #6a6a6a;
+.form-checkbox:disabled + label::before {
+	background-image: url("../img/checkbox-off-disabled.svg");
+}
+
+.form-checkbox:checked:disabled + label::before {
+	background-image: url("../img/checkbox-on-disabled.svg");
 }
 
 .filter {
