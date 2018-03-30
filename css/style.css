@@ -437,20 +437,16 @@ a {
 
 @keyframes bounce {
 	0% {
+
 	transform: scaleY(0);
    	transform-origin: center top;
 	opacity: 0;
 }
-
-  100% {
+    100% {
     transform: scaleY(1);
     transform-origin: center top;
     opacity: 1;
   }
-}
-
-.appointment-form {
-
 }
 
 .appointment-form {
