@@ -1,11 +1,11 @@
 *,::after,::before { 
 	-webkit-box-sizing: inherit; 
-	box-sizing: inherit 
+	box-sizing: inherit;
 } 
 
 html { 
 	-webkit-box-sizing: border-box; 
-	box-sizing: border-box 
+	box-sizing: border-box; 
 }
 
 body {
@@ -303,8 +303,6 @@ a {
 	text-align: center;
 }
 
-/*Рекомендации*/
-
 .block-recommend {
 	order: 2;
 }
@@ -440,16 +438,17 @@ a {
 	color: rgba(255, 255, 255, 0.3);
 }
 
-/* Форма */
-
 @keyframes bounce {
-  0% {
-    transform: translateX(-1200px);
-  }
-
   100% {
-    transform: translateX(0px);
+    transform: scaleY(1);
+    opacity: 1;
   }
+}
+
+.appointment-form {
+	transform: scaleY(0);
+	transform-origin: center top;
+	opacity: 0;
 }
 
 .appointment-form {
@@ -474,7 +473,7 @@ a {
 
 .form-open {
 	display: block;
-	animation: bounce 0.5s;
+	animation: bounce 0.2s;
 }
 
 .arrival {
@@ -760,8 +759,6 @@ a {
     background-position: 50% 100%;
 }
 
-/* Подвал */
-
 .footer {
 	display: flex;
 	position: relative;
@@ -769,6 +766,10 @@ a {
     background-color: #ffffff;
     padding: 33px 0;
     margin-top:-120px;
+}
+
+.footer-inner-page {
+	margin-top: 0;
 }
 
 .footer p,
@@ -889,8 +890,6 @@ a {
 	fill: #bdbbbc;
 }
 
-/* Страница каталога*/
-
 .main-menu .active-page,
 .main-menu .active-page:focus,
 .main-menu .active-page:hover {
@@ -923,8 +922,6 @@ a {
 	border: none;
     padding: 0;
 }
-
-/* Форма */
 
 .infrastructure {
 	padding: 0;
@@ -983,8 +980,6 @@ a {
 	line-height: 21px;
 	margin-top: 25px;
 }
-
-/*Сложная форма */
 
 .filter-range {
   	width: 318px;
@@ -1132,8 +1127,6 @@ a {
   background: #ffffff;
 }
 
-/* Панель сортировки */
-
 .sorting-panel {
 	display: flex;
 	padding-left: 72px;
@@ -1189,8 +1182,6 @@ a {
 	cursor: pointer;
 }
 
-/*Сортировка по возростанию, убыванию */
-
 .ascending {
 	margin-right: 8px;
 	cursor: pointer;
@@ -1225,8 +1216,6 @@ a {
 	fill: #81b3d2;
 	outline: none;
 }
-
-/* Каталог */
 
 .hotel {
 	padding: 0;
@@ -1314,7 +1303,6 @@ a {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
 }
-
 
 .booking {
 	display: block;
