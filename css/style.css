@@ -442,7 +442,7 @@ a {
 
 /* Форма */
 
-/*@keyframes bounce {
+@keyframes bounce {
   0% {
     transform: translateY(-400px);
   }
@@ -450,7 +450,7 @@ a {
   100% {
     transform: translateY(0px);
   }
-}*/
+}
 
 .appointment-form {
 	display: none;
@@ -751,19 +751,24 @@ a {
 
 /* Карта */
 
-.visually-map {
-	height: 473px;
-	background-image: url("../img/map.jpg");
-	background-size: cover;
-	}
+.map {
+	height: 593px;
+    width: 100%;
+    background-color: #ccdaaa;
+    background-image: url(../img/map.jpg);
+    background-size: auto;
+    background-position: 50% 100%;
+}
 
 /* Подвал */
 
 .footer {
 	display: flex;
+	position: relative;
 	align-items: center;
     background-color: #ffffff;
     padding: 33px 0;
+    margin-top:-120px;
 }
 
 .footer p,
