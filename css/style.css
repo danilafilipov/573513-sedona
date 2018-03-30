@@ -919,9 +919,6 @@ a {
     padding: 0;
 }
 
-
-
-
 /* Форма */
 
 .infrastructure {
@@ -981,8 +978,6 @@ a {
 	line-height: 21px;
 	margin-top: 25px;
 }
-
-
 
 /*Сложная форма */
 
@@ -1132,7 +1127,6 @@ a {
   background: #ffffff;
 }
 
-
 /* Панель сортировки */
 
 .sorting-panel {
@@ -1189,7 +1183,6 @@ a {
 	border-bottom: none;
 	cursor: pointer;
 }
-
 
 /*Сортировка по возростанию, убыванию */
 
