@@ -444,11 +444,11 @@ a {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-400px);
+    transform: translateX(-1200px);
   }
 
   100% {
-    transform: translateY(0px);
+    transform: translateX(0px);
   }
 }
 
@@ -474,7 +474,7 @@ a {
 
 .form-open {
 	display: block;
-	animation: bounce 0.7s;
+	animation: bounce 0.5s;
 }
 
 .arrival {
