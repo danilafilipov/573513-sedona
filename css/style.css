@@ -2,50 +2,50 @@
 
 @font-face {
 	font-family: "PT Sans";
-  	font-style: normal;
-  	font-weight: 400;
-  	src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0aExdGM.woff2) format("woff2");
-  	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+	font-style: normal;
+	font-weight: 400;
+	src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0aExdGM.woff2) format("woff2");
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* latin */
 
 @font-face {
-  	font-family: "PT Sans";
-  	font-style: normal;
-  	font-weight: 400;
-  	src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KExQ.woff2) format("woff2");
-  	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local("PT Sans"), local("PTSans-Regular"), url(https://fonts.gstatic.com/s/ptsans/v9/jizaRExUiTo99u79D0KExQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 /* cyrillic */
 
 @font-face {
-  	font-family: "PT Sans";
-  	font-style: normal;
-  	font-weight: 700;
-  	src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0OqtLQ0Z.woff2) format("woff2");
-  	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0OqtLQ0Z.woff2) format("woff2");
+	unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
 }
 
 /* latin */
 
 @font-face {
-  	font-family: "PT Sans";
-  	font-style: normal;
-  	font-weight: 700;
-  	src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format("woff2");
-  	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: local("PT Sans Bold"), local("PTSans-Bold"), url(https://fonts.gstatic.com/s/ptsans/v9/jizfRExUiTo99u79B_mh0O6tLQ.woff2) format("woff2");
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
-*,::after,::before { 
-	-webkit-box-sizing: inherit; 
+*,::after,::before {
+	-webkit-box-sizing: inherit;
 	box-sizing: inherit;
-} 
+}
 
-html { 
-	-webkit-box-sizing: border-box; 
-	box-sizing: border-box; 
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -90,7 +90,7 @@ a {
 .main-navigation {
 	position: relative;
 	margin: 0 auto;
-} 
+}
 
 .main-logo {
 	position: absolute;
@@ -160,7 +160,7 @@ a {
 
 	background-image: url("../img/background-photo.jpg");
 	background-repeat: no-repeat;
-	background-position:  10% 21%;
+	background-position: 10% 21%;
 	background-size: cover;
 	background-color: #6e8595;
 }
@@ -257,7 +257,7 @@ a {
 	background-image: url("../img/firstcause.jpg");
 }
 
-.cause-wrapper {	
+.cause-wrapper {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -277,7 +277,7 @@ a {
 
 .cause-number {
 	line-height: 21px;
-	margin-bottom: 10px;
+	margin-bottom: 12px;
 }
 
 .cause-desc {
@@ -356,7 +356,7 @@ a {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: baseline;
-    
+
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -489,16 +489,19 @@ a {
 	transform: scaleY(0);
 	transform-origin: center top;
 	opacity: 0;
-}
+	}
 	100% {
 	transform: scaleY(1);
 	transform-origin: center top;
 	opacity: 1;
-  }
+	}
+}
+
+.form-close {
+	display: none;
 }
 
 .appointment-form {
-	display: none;
 	position: absolute;
 	top: 291px;
 	left: 0;
@@ -512,10 +515,7 @@ a {
 	font-weight: bold;
 	background-color: #ffffff;
 	box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
-}
 
-.form-open {
-	display: block;
 	animation: bounce 0.8s;
 }
 
@@ -701,7 +701,7 @@ a {
 	text-align: left;
 }
 
-.appointment-item input{
+.appointment-item input {
 	height: 38px;
 	font: inherit;
 	text-transform: uppercase;
@@ -711,7 +711,7 @@ a {
 	outline: none;
 }
 
-.appointment-item input:hover{
+.appointment-item input:hover {
 	background-color: #ebebeb;
 }
 
@@ -729,15 +729,15 @@ a {
 }
 
 .appointment-item input::-webkit-input-placeholder {
-	color:#000;
+	color:#000000;
 }
 
-.appointment-item input:-moz-placeholder { 
-	color:#000;
+.appointment-item input:-moz-placeholder {
+	color:#000000;
 }
 
 .appointment-item input:-ms-input-placeholder {
-	color:#000;
+	color:#000000;
 }
 
 .appointment-item button {
@@ -749,12 +749,12 @@ a {
 }
 
 .appointment-item button:focus,
-.appointment-item button:hover{
+.appointment-item button:hover {
 	color: #000000;
 	outline: none;
 }
 
-.appointment-item button:active{
+.appointment-item button:active {
 	color: #81b3d2;
 }
 
@@ -763,7 +763,7 @@ a {
 	height: 58px;
 	padding-top: 15px;
 	padding-bottom: 17px;
-    
+
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -775,12 +775,12 @@ a {
 }
 
 .search-inner-button:focus,
-.search-inner-button:hover{
+.search-inner-button:hover {
 	background-color: #669ec0;
 	outline: none;
 }
 
-.search-inner-button:active{
+.search-inner-button:active {
 	background-color: #5496bd;
 	color: rgba(255, 255, 255, 0.3);
 }
@@ -802,8 +802,8 @@ a {
 .footer {
 	display: flex;
 	position: relative;
-	padding: 35px 0;
-	margin-top:-120px;
+	padding: 33px 0;
+	margin-top: -120px;
 	align-items: center;
 	background-color: #ffffff;
 }
@@ -815,7 +815,7 @@ a {
 .footer p,
 .footer ul {
 	margin: 0;
-	padding: 0;
+	padding: 0 3%;
 }
 
 .hashtag {
@@ -832,6 +832,8 @@ a {
 .footer-social {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
+
 	width: 33.33%;
 	list-style: none;
 }
@@ -858,7 +860,7 @@ a {
 	left: 0;
 	width: 100%;
 	height: 100%;
-} 
+}
 
 .social-button-tw::before {
 	content: "";
@@ -912,15 +914,10 @@ a {
 }
 
 .footer-social li {
-	margin-right: 6px;
-}
-
-.footer-social li:nth-child(3) {
-	margin-right: 0;
+	margin: 3px;
 }
 
 .copyright-web {
-	padding-top: 4px;
 	padding-left: 3px;
 	margin-right: 10px;
 	color: #000000;
@@ -964,7 +961,7 @@ a {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: 600;
-	color: #ffffff; 
+	color: #ffffff;
 }
 
 .user-form fieldset {
@@ -1033,6 +1030,7 @@ a {
 .filter-range {
 	width: 318px;
 	margin-left: auto;
+	margin-right: 0;
 	color: #ffffff;
 	text-transform: uppercase;
 }
@@ -1148,7 +1146,7 @@ a {
 	height: 22px;
 	margin-top: -11px;
 	margin-left: -11px;
-	border: 9px solid #fff;
+	border: 9px solid #ffffff;
 }
 
 .btn-transparent {
@@ -1313,7 +1311,7 @@ a {
 .wrapper-description {
 	display: flex;
 	flex-direction: row;
-	padding-top: 7px;
+	padding-top: 6px;
 }
 
 .wrapper-description-one {
@@ -1335,9 +1333,9 @@ a {
 
 .hotel-info {
 	display: block;
-	width: 110px;
+	min-width: 110px;
 	height: 27px;
-	padding-top: 3px;
+	padding: 3px 10px 0 10px;
 
 	font-size: 14px;
 	line-height: 21px;
@@ -1360,9 +1358,9 @@ a {
 
 .booking {
 	display: block;
-	width: 142px;
+	min-width: 142px;
 	height: 27px;
-	padding-top: 3px;
+	padding: 3px 10px 0 10px;
 
 	font-size: 14px;
 	line-height: 21px;
@@ -1404,7 +1402,6 @@ a {
 
 	background-image: url(../img/star.svg);
 	background-repeat: space no-repeat;
-	background-image: url("../img/star.svg");
 }
 
 .four-stars {
