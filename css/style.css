@@ -49,8 +49,6 @@ html {
 }
 
 body {
-	min-width: 1200px;
-
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
 	line-height: 26px;
@@ -69,6 +67,7 @@ a {
 
 .container {
 	max-width: 1200px;
+	min-width: 768px;
 	margin: 0 auto;
 
 	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3)
@@ -83,7 +82,6 @@ a {
 }
 
 .main-header {
-	min-height: 56px;
 	background-color: #ffffff;
 }
 
@@ -153,14 +151,13 @@ a {
 }
 
 .promo {
-	position: relative;
-	min-height: 508px;
 	text-align: center;
 	z-index: 2;
-
-	background-image: url("../img/background-photo.jpg");
+	padding-top: 76px;
+	line-height: 0;
+	background-image: url(../img/background-photo.jpg);
 	background-repeat: no-repeat;
-	background-position: 10% 21%;
+	background-position: 50% 21%;
 	background-size: cover;
 	background-color: #6e8595;
 }
@@ -168,10 +165,9 @@ a {
 .promo::after {
 	content: "";
 	display: block;
-	position: absolute;
-
-	min-height: 57px;
+	position: relative;
 	width: 100%;
+	min-height: 57px;
 
 	background-image: url("../img/shape.png");
 	background-repeat: no-repeat;
@@ -180,17 +176,19 @@ a {
 }
 
 .promo-images {
-	margin-top: 76px;
-	margin-bottom: 15px;
+	margin-bottom: 23px;
 }
 
 .wrapper-one,
 .wrapper-two {
-	text-align: center;
 	background-color: #ffffff;
 }
 
 .wrapper-one {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
 	min-height: 216px
 }
 
@@ -199,11 +197,12 @@ a {
 }
 
 .cause-tagline {
-	display: block;
-	width: 440px;
-	padding-top: 60px;
-	margin: auto;
+	width: 500px;
+	margin-top: 5%;
+	margin-left: auto;
+	margin-right: auto;
 
+	text-align: center;
 	font-size: 21px;
 	font-weight: bold;
 }
