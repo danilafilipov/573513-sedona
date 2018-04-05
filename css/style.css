@@ -795,6 +795,8 @@ a {
 }
 
 .visually-map iframe {
+	width: 100%;
+	height: 593px;
 	border: none;
 }
 
