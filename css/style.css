@@ -198,7 +198,7 @@ a {
 
 .cause-tagline {
 	width: 500px;
-	margin-top: 5%;
+	margin-top: 60px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -294,11 +294,6 @@ a {
 	line-height: 21px;
 }
 
-.recommend-desc {
-	line-height: 21px;
-	color: #333333;
-}
-
 .cause-number,
 .cause-desc {
 	line-height: 21px;
@@ -354,7 +349,6 @@ a {
 .recommend {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: baseline;
 
 	margin: 0;
 	padding: 0;
@@ -363,16 +357,18 @@ a {
 
 .recommend-name {
 	margin-bottom: 25px;
+	margin-top: 30px;
 }
 
 .recommend-desc {
-	width: 75%;
+	width: 72%;
 	margin: 0 auto;
+	line-height: 21px;
+	color: #333333;
 }
 
 .recommend li {
 	width: 33.33%;
-	padding: 55px 0 81px 0;
 }
 
 .recommend-first::before {
@@ -382,7 +378,7 @@ a {
 
 	width: 75px;
 	height: 72px;
-	margin: 0 auto 30px auto;
+	margin: 15% auto 0 auto;
 
 	background-image: url("../img/icon-1.svg");
 	background-size: cover;
@@ -396,7 +392,7 @@ a {
 
 	width: 74px;
 	height: 70px;
-	margin: 0 auto 31px auto;
+	margin: 15% auto 0 auto;
 
 	background-image: url("../img/icon-2.svg");
 	background-size: cover;
@@ -410,7 +406,7 @@ a {
 
 	width: 64px;
 	height: 76px;
-	margin: 0 auto 30px auto;
+	margin: 14% auto 0 auto;
 
 	background-image: url("../img/icon-3.svg");
 	background-size: cover;
